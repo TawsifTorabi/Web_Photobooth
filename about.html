@@ -1,0 +1,30 @@
+<style>
+body{font-family: Trebuchet MS;}
+</style>
+<span style="font-size: 40px">Web Photobooth </span><span style="font-size: 20px"><a target="_blank" href="https://tawsiftorabi.github.io/">by Tawsif Torabi</a></span>
+<p>It is simple and fun project by <a href="https://github.com/istoan/">@isotoan.</a> 
+But I wanted to make a practical photobooth for a booth stall in a festival.
+So I worked on this project based on the <a href="https://github.com/istoan/HTML5-Webcam-Photobooth">main git</a>, I made my version of the Web Photobooth.</p>
+<p><img width="100%" src="https://user-images.githubusercontent.com/19222272/212495851-9dd81b13-8259-43b9-b400-f713d9b304f4.png" alt="image"></p>
+<h2 id="features-i-added-">Features I added:</h2>
+<ol>
+<li>Added Keyboard Controls, now <strong>Shutter</strong>, <strong>Timer</strong> and <strong>Save</strong> operation can be done by keyboard shortcuts. </br>
+-- <strong>Space Bar</strong>  -  Shutters </br>
+-- <strong>Enter</strong> - Shutter with Timer </br>
+-- <strong>S</strong> - Save to Server </br>
+-- <strong>1-9</strong> - Set Timer </br></li>
+<li>Customized Frames to Overlay Images. </br></li>
+<li>Random Frames each time user loads the app. </br>
+-- Remove all the frames except one from the <strong>FileList.json</strong> to enable only one frame. </br>
+-- Add Your PNG Square Size overlay inside the SVG file using Illustrator or just encode your PNG Image file into base64 and paste it inside one of the SVG files from the <strong>assets</strong> directory. </br>
+-- Users can change filters after page load. </br></li>
+<li>Timer Shutter </br></li>
+<li>Dynamic Image Gallery Area Showing Latest 20 Images from server. </br></li>
+</ol>
+<h2 id="issues-">Issues:</h2>
+<h4 id="webcam-connected-but-not-working-">Webcam Connected But Not Working:</h4>
+<p>This web app requires an active webcam connected; it makes sense 😜</br>
+And if you are running this of your local server (Localhost:8080), you might not have SSL. And most of the browsers requires websites to have Secured Connection to give secure access to webcam. </br>
+So just add an <strong>https://</strong> before <strong>localhost</strong> and it&#39;ll work just fine. </br>
+It might ask that <strong>Unsafe Website Ahead</strong> because we are forcing our browser to load that non-valid SSL connection of our localhost. </br>
+We have to click that little <strong>Procced to Unsafe (localhost)</strong> button at the bottom of that page. </p>
