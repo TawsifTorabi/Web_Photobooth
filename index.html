@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML5 and JavaScript Webcam PhotoBooth</title>
+<link href="style.css" rel="stylesheet"> 
+<script defer src="script.js"></script>
+<script src="html2canvas.js"></script>
+<link rel="stylesheet" type="text/css" href="aurna-lightbox.css"/>
+
+</head>
+
+<body>
+<script src="aurna-lightbox.js"></script>
+<div class="content">
+	<table style="width: 100%; ">
+		<tr>
+			<td rowspan="2">
+				<div class="holder" id="capture">
+					<span id="timer"></span>
+					<span id="svgImage"></span>
+					<video autoplay="" id="video" style="margin-top: 81px;position: absolute;margin-left: -315px;width: 675px;"></video>
+					<canvas id="canvas" style="margin-top: 81px; width: 450px; height: 337.5px; position: absolute; display: block; margin-left: -18px;"></canvas>
+				</div>
+			</td>
+			<td>
+				<center>
+					<div class="buttons">
+						<button id="buttonCapture" disabled>Capture</button>
+						<button id="buttonSave" disabled>Save</button>
+						&nbsp;
+						&nbsp;
+						<select id="selectTimer">
+							<option value="1">1 Sec.</option>
+							<option value="2">2 Sec.</option>
+							<option selected value="3">3 Sec.</option>
+							<option value="4">4 Sec.</option>
+							<option value="5">5 Sec.</option>
+							<option value="6">6 Sec.</option>
+							<option value="7">7 Sec.</option>
+							<option value="8">8 Sec.</option>
+							<option value="9">9 Sec.</option>
+							<option value="10">10 Sec.</option>
+						</select>
+						<button id="buttonTimerSave">Set Timer</button>
+						<button id="switch">Change Filter</button>
+					</div>
+				</center>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="savedImages">
+					<span style="width: 517px;display: block;"></span>
+				</div></br>
+				<div style="font-size: 10px; font-family: Trebuchet MS;">
+					Press <kbd>&nbsp; Space &nbsp;</kbd> to Capture, 
+					<kbd>&nbsp; Enter &nbsp;</kbd> to Timer, 
+					<kbd>&nbsp; S</kbd> to Save, 
+				</div>
+			</td>	
+		</tr>
+	</table>
+	
+</div>
+<div class="footer">
+	<div class="bottomlinkscontainer">
+		Web Photobooth made with ❤ by <a href="https://tawsiftorabi.github.io/" target="_blank">@TawsifTorabi</a> | 
+		<a href="https://github.com/TawsifTorabi/Web_Photobooth" target="_blank">Source Code on Github</a> &nbsp;
+		<button class="bottomLink" onclick="aurnaIframe('about.html');">About</button>
+	</div>
+</div>
+</body>
+</html>
