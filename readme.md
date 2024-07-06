@@ -21,6 +21,23 @@ So I worked on this project based on the [main git](https://github.com/istoan/HT
 5. Dynamic Image Gallery Area Showing Latest 20 Images from server. </br>
 
 
+
+### Why Websocket Server using Python?
+This feature is optional, I made it because I wanted to control the web app remotely using a remote made on ESP8266 Wifi Microcontroller with a websocket client backend.  
+Yes I could have hosted the websocket server on the ESP32 itself but it was too much power consuming and eating up the battery real fast.  
+So I made the ESP32 remote a client to the python websocket server.  
+
+This websocket server is running on Python. So you need to install 'websockets' package on your Python environment.  
+<code>pip install websockets</code>  
+You can compile the python code to an executable file for Windows using <code>'auto-py-to-exe'</code>  
+then it will be a lot easier to handle or execute the file with PHP <code>exec()</code> and run the websocket server in the backend.  
+It would be helpful if you were running this app for a kiosk booth or a photo booth.  
+  
+If you don't need the websocket remote controller, then just follow these steps,
+1. Remove <code>'websocket.js'</code> from <code>app.html</code>
+2. Rename <code>index.php</code> to anything you like, it's just to disable the index file, you can just delete it.
+2. rename <code>app.html</code> to <code>index.html</code>
+
 ## Issues:
 #### Webcam Connected But Not Working:
 This web app requires an active webcam connected; it makes sense 😜</br>
